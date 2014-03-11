@@ -1,5 +1,6 @@
 require 'rspec'
+require_relative 'todo'
 
-describe ToDoList do 
+describe ToDoList do
 
 end
