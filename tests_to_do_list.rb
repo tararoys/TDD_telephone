@@ -17,4 +17,10 @@ describe ToDoList do
       list = ToDoList.new(status: "complete")
       expect(list.status).to_not eq(nil)
     end  
+
+    it "created_at timestamp should be automatically set on initialization" do
+        list = ToDoList.new(status: "complete")
+        expect(list.created_at).to eq("By Monday")
+    end 
+
 end
