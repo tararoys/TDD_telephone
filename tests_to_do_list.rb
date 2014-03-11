@@ -12,4 +12,9 @@ describe ToDoList do
       list = ToDoList.new(description: "A list of things for Tara to do")
       expect(list.description).to_not eq(nil)
     end
+
+    it "should have a status" do 
+      list = ToDoList.new(status: "complete")
+      expect(list.status).to_not eq(nil)
+    end  
 end
